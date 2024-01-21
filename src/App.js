@@ -9,13 +9,14 @@ function App() {
   return (
       <Container className='container '>
         <Col className='asideCol'>
-     <Aside></Aside>
+     <Aside title="Bootstrap
+                   Sidebar"></Aside>
         </Col>
         <Col className='navCol'>
         <Row>
      <Navi></Navi>
         </Row>
-     <Main></Main>
+     <Main title="Responsive Sidebar Template"></Main>
         </Col>
       </Container>
   );

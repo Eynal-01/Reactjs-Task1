@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { ListGroup, ListGroupItem} from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faComment, faCalendar } from '@fortawesome/free-regular-svg-icons' 
+import { faCalendar } from '@fortawesome/free-regular-svg-icons' 
 import { faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faDashboard, faGamepad, faHome, faLandmark } from '@fortawesome/free-solid-svg-icons'
+import { faDashboard, faHome, faLandmark } from '@fortawesome/free-solid-svg-icons'
 
 export default class Aside extends Component {
   render() {
     return (
       <div className='aside'>
-  <ListGroup className='list'><h1 className='h1'>BootStrap<br></br>Sidebar</h1>
+  <ListGroup className='list'><h1 className='h1'>{this.props.title}</h1>
   <ListGroupItem className='ListGroupItem'>
     <FontAwesomeIcon icon={faHome} style={{marginRight:"20px"}}/>
     Home
